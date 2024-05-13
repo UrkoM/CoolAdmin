@@ -1550,6 +1550,7 @@
             data.forEach(function (item) {
                 var timelineRow = document.createElement("div");
                 timelineRow.className = "timeline-row";
+                timelineRow.dataset.who = item.who; // Utiliza el atributo dataset para establecer el valor del atributo data-who
 
                 var timelineTime = document.createElement("div");
                 timelineTime.className = "timeline-time";
