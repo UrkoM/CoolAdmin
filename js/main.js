@@ -1467,10 +1467,9 @@
                     who: "company",
                     from: "sadasd@asda.com",
                     to: "sadasd@asda.com",
-                    title: "Admin theme!",
+                    title: "hola 1",
                     content: "Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop and ion slider.",
                     badges: ["Envío presupuesto"],
-                    dotClass: "fb-bg",
                 },
                 {
                     time: "8:00 AM",
@@ -1478,10 +1477,9 @@
                     who: "client",
                     from: "sadasd@asda.com",
                     to: "sadasd@asda.com",
-                    title: "Admin theme!",
+                    title: "hola 2",
                     content: "Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar.",
                     badges: ["Peticion de presupuesto"],
-                    dotClass: "green-one-bg",
                 },
                 {
                     time: "7:25 PM",
@@ -1489,10 +1487,9 @@
                     who: "company",
                     from: "sadasd@asda.com",
                     to: "sadasd@asda.com",
-                    title: "Best Admin Template!",
+                    title: "hola 3",
                     content: "Custom C3 graphs, Custom flot graphs, flot graphs, small graphs, Sass, profile and timeline.",
                     badges: ["Retargeting"],
-                    dotClass: "green-two-bg",
                 },
                 {
                     time: "3:55 PM",
@@ -1500,10 +1497,9 @@
                     who: "company",
                     from: "sadasd@asda.com",
                     to: "sadasd@asda.com",
-                    title: "Milestone Admin",
+                    title: "hola 4",
                     content: "Admin theme includes graphs, invoice, timeline, widgets, projects, calendar, components, layouts, todo's.",
                     badges: ["Retargeting"],
-                    dotClass: "green-three-bg",
                 },
                 {
                     time: "5:24 PM",
@@ -1511,10 +1507,9 @@
                     who: "client",
                     from: "sadasd@asda.com",
                     to: "sadasd@asda.com",
-                    title: "Milestone Dashboard",
+                    title: "Hola 5",
                     content: "Milestone Admin Dashboard includes invoice, profile, tasks, gallery, projects, maintanence.",
                     badges: ["Aeptación presupuesto"],
-                    dotClass: "green-four-bg",
                 },
             ];
 
@@ -1555,9 +1550,6 @@
                 var timelineTime = document.createElement("div");
                 timelineTime.className = "timeline-time";
                 timelineTime.innerHTML = item.time + "<small>" + item.date + "</small>";
-
-                var timelineDot = document.createElement("div");
-                timelineDot.className = "timeline-dot " + item.dotClass;
 
                 var timelineContent = document.createElement("div");
                 timelineContent.className = "timeline-content";
@@ -1620,7 +1612,6 @@
                 timelineContent.appendChild(badgesDiv);
 
                 timelineRow.appendChild(timelineTime);
-                timelineRow.appendChild(timelineDot);
                 timelineRow.appendChild(timelineContent);
 
                 timeline.appendChild(timelineRow);
