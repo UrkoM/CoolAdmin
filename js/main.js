@@ -1237,7 +1237,7 @@
             }
 
             div1.innerHTML = `<span class="badge ${badgeClass}">${category}</span>`;
-            r[1] = div1;
+            r[2] = div1;
 
             var div3 = document.createElement("div");
             div3.innerHTML = r[3];
