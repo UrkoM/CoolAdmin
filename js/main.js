@@ -1182,14 +1182,14 @@
     "use strict";
     try {
         const dataSet = [
-            ["000001", "Mail", "Active", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
-            ["000002", "Mail", "Inactive", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
-            ["000003", "Mail", "Pending", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
-            ["000004", "Mail", "Blocked", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
-            ["000005", "Mail", "On Hold", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
+            ["000001", "Mail", "Presupuesto", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
+            ["000002", "Mail", "Facturas", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
+            ["000003", "Mail", "Presupuesto", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
+            ["000004", "Mail", "Problemas de embarque", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
+            ["000005", "Mail", "Consulta horarios", "2011/04/25", "asd@asd.com", "asd@asd.com", "https://asdasda", "https://asdasda"],
         ];
 
-        const categories = [{ name: "Default1" }, { name: "Default2" }, { name: "Default3" }, { name: "custom1" }];
+        const categories = [{ name: "Presupuesto" }, { name: "Consulta general" }, { name: "Consulta horario" }, { name: "Problemas de embarque" }];
         ///007 ERROR NO FUNCIONAN EL SIDEBAR LAS CATEGORIAS AL AHCERSE PARA MIVL EN EL HTML CATEGORIES
 
         // Obtener el elemento ul donde se agregarán las categorías
@@ -1216,16 +1216,16 @@
             var badgeClass = "";
 
             switch (category) {
-                case "Active":
+                case "Consulta horarios":
                     badgeClass = "badge-primary";
                     break;
-                case "Inactive":
+                case "Presupuesto":
                     badgeClass = "badge-success";
                     break;
-                case "Pending":
+                case "Facturas":
                     badgeClass = "badge-warning";
                     break;
-                case "Blocked":
+                case "Problemas de embarque":
                     badgeClass = "badge-danger";
                     break;
                 case "On Hold":
@@ -1327,7 +1327,7 @@
                                 $("<select>")
                                     .addClass("form-control")
                                     .val(data[0])
-                                    .append($("<option>").text("Opción 1").val("opcion1"), $("<option>").text("Opción 2").val("opcion2"), $("<option>").text("Opción 3").val("opcion3"))
+                                    .append($("<option>").text("Peticion prespupuestos").val("opcion1"), $("<option>").text("Opción 2").val("Precotizado"), $("<option>").text("Problema de embarque").val("opcion3"))
                             ),
 
                         $("<div>").addClass("form-group1 col-md-6").append($("<label>").text("Response attachment"), $("<input>").attr("type", "text").addClass("form-control").val(data[4]))
